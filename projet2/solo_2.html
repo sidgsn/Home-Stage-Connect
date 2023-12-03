@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <title>Harrison Coleman</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+	<style>
+	body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    #singer-container {
+      display: flex;
+      align-items:center;
+      margin: 20px 0;
+    }
+
+    #singer-image {
+      justify-content: start;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10%;
+      margin-right: 20px;
+    }
+
+    #singer-details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #singer-name {
+	  text-shadow: 1px 3px 8px rgba(128, 128, 128, 1);
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    #description-container {
+      text-align: center;
+      font-size: 1.2rem;
+      font-stretch:100%;
+      max-width: 900px;
+      margin: 30px 0;
+    }
+
+    #review-container {
+      
+      margin-bottom: 20px;
+    }
+		/* form button*/
+
+.box {
+	text-align: center;
+}
+.button {
+	font-size: 1em;
+	padding: 15px 35px;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+	background: #fe0000;
+	border-radius: 50px;
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.8);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+.wrapper {
+	margin: 70px auto;
+	padding: 20px;
+	background: #e7e7e7;
+	border-radius: 5px;
+	width: 30%;
+	position: relative;
+	transition: all 5s ease-in-out;
+}
+.wrapper h2 {
+	margin-top: 0;
+	color: #333;
+}
+.wrapper .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+.wrapper .close:hover {
+	color: #06D85F;
+}
+.wrapper .content {
+	max-height: 30%;
+	overflow: auto;
+}
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+}
+/*form*/
+
+.container {
+	border-radius: 5px;
+	background-color: #e7e7e7;
+	padding: 20px 0;
+}
+form label {
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 3px;
+}
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+input[type=email], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+input[type="submit"] {
+	background-color: #ff0000;
+	color: #ffffff;
+	padding: 15px 50px;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+	</style>
+    
+</head>
+<body>
+	
+	<header>
+		<h1>Singer's Website</h1>
+	  </header>
+	
+	  <div id="singer-container">
+		<img id="singer-image" src="../img/solo_2.jpg" alt="Singer Image">
+		<div id="singer-details">
+		  <h1><div id="singer-name">Ben Foulds</div></h1>
+		</div>
+	  </div>
+	
+	  <div id="description-container">
+            <p>Ben Foulds is an international vocal & guitar cover artiste, performing an acoustic tribute to music <br>
+                 of all eras. Ben is based in the West Midlands, but is currently working regularly nationwide. <br>
+                With 12 years of performing experience ranging from his work as a solo musician through to taking leading roles in musical theatre stage shows.
+		</p>
+	  </div>
+	  <div>
+		<iframe width="920" height="518" src="https://www.youtube.com/embed/VWK91Su2DiI?si=e1_RjUiWQp3XfHRf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	  </div>
+	
+	  <div id="review-container">
+		<h2>REVIEW</h2>
+		<p>Book Ben Foulds and be the first to leave a review.</p>
+	  </div>
+   
+	<div class="box">
+		<a class="button" href="#divOne">Book Now</a>
+	</div>
+	<div class="overlay" id="divOne">
+		<div class="wrapper">
+			<h2>Please Fill up The Form</h2><a class="close" href="#">&times;</a>
+			<div class="content">
+				<div class="container">
+					<form action="https://formsubmit.co/homestageconnect@gmail.com" method="POST">
+						<label>Your Name</label>
+						<input placeholder="Your name.." type="text" name="name" required>
+						<label>Email</label>
+						<input placeholder="Your email" type="email" name="email" required>
+						<label>Phone number</label>
+						<input placeholder="Phone number" type="text" name="number" required>
+						<label>Subject</label> 
+						<textarea name="message" iplaceholder="Write something.."></textarea>
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		&copy; 2023 Home Stage Connect. All rights reserved.
+	  </footer> 
+</body>
+</html>
